@@ -19,7 +19,7 @@ class ProductListView(generic.ListView):
     
     template_name = 'catalog/product_list.html'
     context_object_name = 'product_list'
-    paginate_by = 3
+    paginate_by = 12
 
     def get_queryset(self):
         queryset = Product.objects.all()
